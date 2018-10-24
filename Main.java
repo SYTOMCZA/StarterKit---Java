@@ -9,9 +9,9 @@ public class Main {
 	
 	public static void main(String[] args) throws TemperatureException {
 		
-		Whirpool whirpool = new Whirpool(MakersWashingMachines.WHIRPOOL);
-		Beko beko = new Beko(MakersWashingMachines.BEKO);
-		Amica amica = new Amica(MakersWashingMachines.AMICA);
+		Whirpool whirpool = new Whirpool();
+		Beko beko = new Beko();
+		Amica amica = new Amica();
 		
 		List<WashingMachine> allWashingMachines = new ArrayList<>();
 		

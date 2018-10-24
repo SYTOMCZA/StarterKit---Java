@@ -2,7 +2,7 @@ package WashingMachines;
 
 public class Amica extends WashingMachine {
 	
-	public Amica(MakersWashingMachines makersWashingMachines) {
-		super(makersWashingMachines);
+	public Amica() {
+		super(MakersWashingMachines.AMICA);
 	}
 }

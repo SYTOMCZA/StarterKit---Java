@@ -2,8 +2,8 @@ package WashingMachines;
 
 public class Whirpool extends WashingMachine {
 	
-	public Whirpool(MakersWashingMachines makersWashingMachines) {
-		super(makersWashingMachines);
+	public Whirpool() {
+		super(MakersWashingMachines.WHIRPOOL);
 		maxWashingProgram = 25;
 	}
 }

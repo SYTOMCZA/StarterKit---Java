@@ -2,8 +2,8 @@ package WashingMachines;
 
 public class Beko extends WashingMachine {
 	
-	public Beko(MakersWashingMachines makersWashingMachines) {
-		super(makersWashingMachines);
+	public Beko() {
+		super(MakersWashingMachines.BEKO);
 		changeTemp = 1;
 	}
 	
