@@ -2,20 +2,23 @@ package WashingMachines;
 
 public abstract class WashingMachine {
 	
-	protected int					washingProgram;
-	protected final int				minWashingProgram	= 1;
+	private int						washingProgram;
+	private final int				minWashingProgram	= 1;
 	protected int					maxWashingProgram	= 20;
-	protected double				washingTemp;
-	protected final double			minWashingTemp		= 0;
-	protected double				maxWashingTemp		= 90;
-	protected int					washingSpeed;
-	protected final int				minWashingSpeed		= 0;
-	protected int					maxWashingSpeed		= 1000;
+	private double					washingTemp;
+	private final double			minWashingTemp		= 0;
+	private double					maxWashingTemp		= 90;
+	private int						washingSpeed;
+	private final int				minWashingSpeed		= 0;
+	private int						maxWashingSpeed		= 1000;
 	protected MakersWashingMachines	makersWashingMachines;
 	protected double				changeTemp			= 0.5;
 	
 	public WashingMachine(MakersWashingMachines makersWashingMachines) {
 		this.makersWashingMachines = makersWashingMachines;
+		this.washingProgram = minWashingProgram;
+		this.washingTemp = minWashingTemp;
+		this.washingSpeed = minWashingSpeed;
 	}
 	
 	public void setWashingTemp(double washingTemp) throws TemperatureException {
